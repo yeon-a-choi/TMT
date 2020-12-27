@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>TMT Main</title>
+  <link rel="stylesheet" href="css/style.css" />
+ </head>
+
+<!-- 슬라이드 효과를 위한 js -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- exhibition & sale 슬라이드 효과 js -->
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+
+<style>
+		ul,li{list-style:none;}
+
+		.slide{height:400px;overflow:hidden;}
+		.slide ul{height:100%;}
+		.slide li{height:100%;}
+		.slide li:nth-child(1){
+		}
+		.slide li:nth-child(2){
+		}
+
+		.slide li:nth-child(3){
+		}
+
+
+		h5:after {
+			content: "";
+			display: block;
+			width: 110px;
+			border-bottom: 1.5px solid #bcbcbc;
+			margin: 5px 0px;
+		}
+
+		.plus img {
+			width: 15px;
+			height: 15px;
+			position: absolute;
+		}
+
+		.board {
+			width: 100%;
+			height: auto;
+			position: relative;
+			top:60px;
+			margin: 0 0 15% 5%;
+		}
+		
+		.exhibition{
+			position: relative;
+			width: 41%;
+			height: 300px;
+			overflow: hidden;
+			list-style-type: none;
+			float:left; /*전시회 부분은 왼쪽 고정*/
+		}
+
+		.ex_slide {
+			position: absolute;
+			text-align: center;
+			left: 0;
+			top: 5%;
+			transition: left 0.5s ease-out;
+		}
+		.ex_slide li{
+			display: inline;
+			margin: 30px 2.1% 0px 2.1%;
+			float: left;
+			font-size: 8pt;
+			color: white;
+		}
+		.ex_slide img{
+			width: 150px;
+			height: auto;
+			display: block;
+			margin: auto;
+		}
+		.img_prev, .img_next {
+			position: absolute;
+			top: 55%;
+			margin-top: -30px;
+		}
+		.img_next {
+			right: 0;
+		}
+		.img_prev {
+			left: 0;
+		}
+		.img_prev img, .img_next img {
+			width: 20px;
+			height: auto;
+			display: block;
+			margin:  auto;
+		}
+
+
+		.sale {
+			position: relative;
+			width: 41%;
+			height: 315px;
+			overflow: hidden;
+			list-style-type: none;
+			float:right;
+			margin: 0 10% 0 0; /*제품 판매 부분은 여기에서 위치조정*/
+		}
+
+		.s_slide {
+			position: absolute;
+			text-align: center;
+			left: 0;
+			top: 5%;
+			transition: left 0.5s ease-out;
+		}
+		.s_slide li{
+			display: inline;
+			margin: 30px 2.1% 0px 2.1%;
+			float: left;
+			font-size: 8pt;
+			color: white;
+		}
+		.s_slide img{
+			width: 150px;
+			height: auto;
+			display: block;
+			margin: auto;
+		}
+		.sa_prev, .sa_next {
+			position: absolute;
+			top: 55%;
+			margin-top: -30px;
+		}
+		.sa_next {
+			right: 0;
+		}
+		.sa_prev {
+			left: 0;
+		}
+		.sa_prev img, .sa_next img {
+			width: 20px;
+			height: auto;
+			display: block;
+			margin:  auto;
+		}
+
+</style>
+
+ <body>
+		<header>
+				<div class="wrapper">
+					<a href="./main.html"> <img src="image/cat.png" alt="TMT"> <!-- 로고 --> </a>
+					<nav>
+						<ul class="menu">
+							<li><a href="./exhibition.html" id=bol>Exhibition</a></li>
+							<li><a href="./sale.html" id=bol>Sale</a></li>
+							<li><a href="./customizing.html" id=bol>Customizing</a></li>
+							<li><a href="./Recommended.html" id=bol>Recommended coordination</a></li>
+						</ul>
+					</nav>
+				</div>
+		</header>
+
+		<div class="slide">
+				<ul>
+					<li><img src='image/banner.png' style="width:100%; height:100%;"/></li>
+					<a href="exhibition_detail.html"><li><img src='image/banner2.jpg' style="width:100%; height:100%;"/></li></a>
+					<li><img src='image/banner3.jpg' style="width:100%; height:100%;"/></li>
+				</ul>
+
+				<script>
+					  const all = ele => document.querySelectorAll(ele)
+					  const one = ele => document.querySelector(ele)
+					  const slide = _ => {
+					  const wrap = one('.slide') // .slide 선택
+					  const target = wrap.children[0] // .slide ul 선택
+					  const len = target.children.length // .slide li 갯수
+
+					  // .slide ul의 너비 조정
+					  target.style.cssText = `width:calc(100% * ${len});display:flex;transition:1s`
+
+					  // .slide li의 너비 조정
+					  Array.from(target.children)
+					  .forEach(ele => ele.style.cssText = `width:calc(100% / ${len});`)
+
+					  // 화면 전환 실행
+					  let pos = 0
+					  setInterval(() => {
+						pos = (pos + 1) % len // 장면 선택
+						target.style.marginLeft = `${-pos * 100}%`
+						}, 2500) // 1500 = 1500ms = 1.5sec. 즉, 1.5초 마다 실행
+					}
+					window.onload = function () {
+					  slide()
+					}
+				</script>
+		</div>
+		
+		<div class="board">
+				
+				<div class="exhibition">
+						
+						<div class="plus">
+								<a href="exhibition.html"><img src="image/plus.png" style="margin: 0.5% 0 0 20%;"/></a>
+						</div>
+
+						<h5 style="color: white;">전시회 | Exhibition</h5>
+
+						<ul class="ex_slide">
+							
+
+							<li><img src="image/ei1.png"><br>K-BEAUTY EXPO</li>
+							<a href="exhibition_detail.html"><li><img src="image/ei2.png" ><br>FASHION CODE Festival</li></a>
+							<li><img src="image/ei3.png" ><br>Daegu Collection</li>
+							<li><img src="image/ei4.png" ><br>Daegu Fashion Fair</li>
+							<li><img src="image/ei5.png" ><br>HISEOUL FASHION SHOW</li>
+							<li><img src="image/ei6.png" ><br>KOCCA FASHION WEEK</li>
+							<li><img src="image/ei7.png" ><br>THE M CORSET MOMENT</li>
+						</ul>
+						
+						<!-- 전, 후 -->
+						<a class="img_prev">
+							<img src="image/prev.png" >
+						</a>
+						<a class="img_next">
+							<img src="image/next.png" >
+						</a>
+
+						<script>
+							/* exhibition 슬라이드 */
+							var img_slides = document.querySelector('.ex_slide'),
+								img_slide = document.querySelectorAll('.ex_slide li'),
+								currentIdx = 0,
+								img_slideCount = img_slide.length,
+								prevBtn = document.querySelector('.img_prev'),
+								nextBtn = document.querySelector('.img_next'),
+								img_slideWidth = 150,
+								img_slideMarginR = 17,
+								img_slideMarginL = 30;
+								img_slides.style.width = (img_slideWidth + img_slideMarginR + img_slideMarginL) * img_slideCount + 'px';
+							function moveSlide(num) {
+								img_slides.style.left = -num * 210 + 'px';
+								currentIdx = num;
+							}
+							nextBtn.addEventListener('click', function() {
+								if(currentIdx < img_slideCount - 4) {
+									moveSlide(currentIdx + 1);
+								}
+								else {
+									moveSlide(0);
+								}
+							} );
+							prevBtn.addEventListener('click', function() {
+								if(currentIdx > 0) {
+									moveSlide(currentIdx - 1);
+								}
+								else {
+									moveSlide(img_slideCount - 4);
+								}
+							} );
+						</script>
+
+				</div>
+
+				
+				<div class="sale">
+						<div class="plus" >
+								<a href="sale.html"><img src="image/plus.png" style="margin: 0.5% 0 0 19%;" /></a>
+						</div>
+
+						<h5 style="color: white;">제품 판매 | Sale</h5>
+
+						<ul class="s_slide">
+							<li><img src='image/sale1.png'><br>샤넬 코코 마드모아젤<br>로 프리베 50ml<br>￦126,000</li>
+							<li><img src="image/sale2.png" ><br>2020 S/S 체크무늬 원피스<br>￦423,000</li>
+							<li><img src="image/sale3.png" ><br>2020 S/S White belted jacket<br>￦615,000</li>
+							<li><img src="image/sale7.png" ><br>2020 S/S 써클 벨트 브라운 슬랙스<br>￦496,000</li>
+							<li><img src="image/sale5.png" ><br>2020 S/S 천연 염색 가디건<br>￦285,000</li>
+							<li><img src="image/sale6.png" ><br>2020 S/S 시스루 한복 원피스<br>￦530,000</li>
+							<li><img src="image/sale4.png" ><br>2020 S/S 수채화 무늬 원피스<br>￦419,000</li>
+						</ul>
+						
+						<!-- 전, 후 -->
+						<a class="sa_prev">
+							<img src="image/prev.png">
+						</a>
+						<a class="sa_next">
+							<img src="image/next.png">
+						</a>
+
+						<script>
+							/* sale 슬라이드 */
+							var sa_slides = document.querySelector('.s_slide'),
+								sa_slide = document.querySelectorAll('.s_slide li'),
+								current_Idx = 0,
+								sa_slideCount = sa_slide.length,
+								prevBtn = document.querySelector('.sa_prev'),
+								nextBtn = document.querySelector('.sa_next'),
+								sa_slideWidth = 150,
+								sa_slideMarginR = 17,
+								sa_slideMarginL = 30;
+								sa_slides.style.width = (sa_slideWidth + sa_slideMarginR + sa_slideMarginL) * sa_slideCount + 'px';
+							function move_Slide(num2) {
+								sa_slides.style.left = -num2 * 210 + 'px';
+								current_Idx = num2;
+							}
+							nextBtn.addEventListener('click', function() {
+								if(current_Idx < sa_slideCount - 4) {
+									move_Slide(current_Idx + 1);
+								}
+								else {
+									move_Slide(0);
+								}
+							} );
+							prevBtn.addEventListener('click', function() {
+								if(current_Idx > 0) {
+									move_Slide(current_Idx - 1);
+								}
+								else {
+									move_Slide(sa_slideCount - 4);
+								}
+							} );
+						</script>
+				</div>
+
+		</div>
+	
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+
+		<footer>
+				<div class="foot">
+					<ul class="bottom">
+						<li>Tel : 054-820-5114</li>
+
+						<li>Address : 1375, Gyeongdong-ro, Andong-si, Gyeongsangbuk-do</li>
+
+						<li>E-mail :  banmu_@naver.com</li>
+
+						<li>COPYRIGHT@Online Beauty & Fashion Exhibition</li>
+
+					</ul>
+				</div>
+
+		</footer>
+
+ </body>
+
+</html>

@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recommended coordination</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/style1.css" />
+  <link href="http://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" >
+ </head>
+ <body>
+ <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+		AOS.init();
+	</script>
+	<header>
+			<div class="wrapper">
+				<a href="./main.html"><img src="image/cat.png" alt="TMT"></a> <!-- 로고 -->
+				<nav>
+					<ul class="menu">
+						<li><a href="./exhibition.html" id=bol>Exhibition</a></li>
+						<li><a href="./sale.html" id=bol>Sale</a></li>
+						<li><a href="./customizing.html" id=bol>Customizing</a></li>
+						<li><a href="./Recommended.html" id=bol>Recommended coordination</a></li>
+					</ul>
+				</nav>
+			</div>
+	</header>
+	<content>
+		<div class="saleimg">
+			<img src="image/big_title.jpg" style="width: 100%;">
+			<div class="content1">
+				<div class="fade_2" data-aos="fade-down" data-aos-easing="ease-in-out">
+					<p>추천코디</p>
+					<p>Recommended coordination</p>
+					<p><img src="image/arrow.svg"></p>
+				</div>
+			</div>
+		</div>
+		<!--<div class="bigimg">
+			<img src="image/big_title.jpg" alt="큰_이미지" style="width:100%;">
+			<div class="word">
+				<p style="font-weight: bold;">추천코디</p>
+				<p>Recommended coordination</p>
+				<p><img src="image/big_title_element.png" style="width:50px; height:32px;"></p>
+			</div>
+		</div>-->
+		<div class="select">
+			<ul class="sel">
+				<li style="color: gray; font-weight: bold; padding-left: 30px;">뷰티/패션</a></li>
+			</ul>
+			<img src="image/pink.png" alt="PINK" style="width: 74%; height: 40px;">
+		</div>
+
+		<div class="img_all">
+			<div class="star_img">
+				<img src="image/rem01.jpg" alt="인스타 이미지">
+				<p>instagram : _eunjinsong</p>
+				<p>♡</p>
+			</div>
+			
+			<div class="star_img">
+				<img src="image/rem02.jpg" alt="인스타 이미지">
+				<p>instagram : double__cong</p>
+				<p>도톰한 두께감에 탈부착 가능한 페이크퍼 카라! 부담 없는 컬러로 데일리 아우터로 손색없는 항상 사랑받는 자켓이에요</p>
+			</div>
+			
+			<div class="star_img">
+				<img src="image/rem03.jpg" alt="인스타 이미지">
+				<p>instagram : y_eop_</p>
+				<p>오랜만에 수트입고 나들이🔥 추울때는 역시 롱패딩이죠?
+				그중 k2 롱패딩은 가볍고, 세련된 핏 (혁신적인 ‘씬다운(Thin Down)소재를 사용했으며 코트 대신 입을 수 있는 따뜻한 롱패딩입니다🤭
+				얼죽코 인 분들에게도 추천 가능한 스타일의 롱패딩기존에 두터운 퀼팅형 롱패딩과는 차원이 다른
+				핏 퀼팅선이 없는 심플한 디자인에 세련된 오버핏으로 비즈니스룩 부터 캐주얼한 스타일까지 다양하게 착용 가능하며
+				저는 이번에 비즈니스룩을 연출해봤는데 어떤가요😊</p>
+			</div>
+		
+			<div class="star_img">
+				<img src="image/rem04.jpg" alt="인스타 이미지">
+				<p>instagram : under_lime</p>
+				<p>#동대문옷가게#대전옷가게#신부동옷가게#인천옷가게#경주옷가게#데일리룩#데일리룩추천#청주카페#대전카페#은행동카페#동대문카페
+				#강남맛집#강남카페#홍대옷가게</p><br><br><br><br><br><br><br>
+			</div>
+
+			<div class="star_img">
+				<img src="image/rem05.jpg" alt="인스타 이미지">
+				<p>instagram : hanq0910</p>
+				<p>시간이 지나도 소중히 아껴입는 가장 좋아하는 가을 자켓</p>
+			</div>
+
+			<div class="star_img">
+				<img src="image/rem06.jpg" alt="인스타 이미지">
+				<p>instagram : ryu_sunny_<p>
+				<p>아우터:@belier_atelier <br>하의:@addseoul_official</p>
+			</div>
+		</div>
+	</content>	
+	<footer>
+			<div class="foot">
+				<ul class="bottom">
+					<li>Tel : 054-820-5114</li>
+
+					<li>Address : 1375, Gyeongdong-ro, Andong-si, Gyeongsangbuk-do</li>
+
+					<li>E-mail :  banmu_@naver.com</li>
+
+					<li>COPYRIGHT@Online Beauty & Fashion Exhibition</li>
+
+				</ul>
+			</div>
+
+	</footer>
+
+</html>

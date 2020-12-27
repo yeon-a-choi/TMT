@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>TMT_custo_designer1</title>
+ </head>
+ <body>
+
+ 		<section>
+			<!-- 정보란-->
+			<div class="imformation" >
+			<table>
+				<tr>
+				<td rowspan="2", class="sns">
+				<!--<ul >-->
+					<li><img src="image/instagram.png"></li>
+					<li class="pa">@LiA_00</li>
+					<br>
+					<li><img src="image/kakao.png"></li>
+					<li class="pa">lia00k</li>
+					<br>
+					<li><img src="image/naver.png"></li>
+					<li class="pa">lia00k@naver.com</li>
+				<!--</ul>-->
+				</td>
+
+				<td rowspan="2", class="name">
+				<!--<ul >-->
+					<li><img src="image/photo.png"></li>
+					<li>Kim Li A</li>
+				<!--</ul>-->
+				</td>
+
+				<td class="career">
+				<!--<ul >-->
+					<li>경력</li>
+					<li></li>
+					<li></li>
+				<!--</ul>-->
+				</td>
+
+				<td class="career_imfor">
+				<!--<ul >-->
+					<li>2016 Anna Sui perfume design. Award</li>
+					<li>2017 CLIO Cushion design. Award</li>
+					<li>현재 Freelancer Designer.</li>
+				<!--</ul>-->
+				</td>
+				</tr>
+
+				<tr>
+					<td colspan=2, class="but">
+						<hr>
+						<a href=""><img src="image/but.png"></a>
+						<ul class="but_name">
+							<a href="./Info_Popup.html"><li>디자이너에게 제품 신청하기</li></a>
+						</ul>
+					</td>
+				</tr>
+
+			</table>
+			</div>
+		</section>
+
+		<div class="division">
+			<hr>
+		</div>
+
+		<!-- best-->
+		<section>
+			<div class="best">
+				<li>BEST</li>
+			</div>
+
+			<div class="best_slide">
+				<!--슬라이드 이미지-->
+				<ul class="slide">
+					<li><img src="image/designer1-01.png" alt="designer1-01">[Purfume case]<br>Buterffly</li>
+					<li><img src="image/designer1-02.png" alt="designer1-02">[Purfume case]<br>Crouwn</li>
+					<li><img src="image/designer1-03.png" alt="designer1-03">[Purfume case]<br>Lotus</li>
+					<li><img src="image/designer1-04.png" alt="designer1-04">[Cushion Case]<br>Rose of Sharon</li>
+					<li><img src="image/designer1-05.png" alt="designer1-05">[Purfume case]<br>Peacock</li>
+					<li><img src="image/designer1-06.png" alt="designer1-06">[Cushion case]<br>Marble</li>
+					<li><img src="image/designer1-07.png" alt="designer1-07">[Cushion case]<br>Bell</li>
+					<li><img src="image/designer1-08.png" alt="designer1-08">[Cushion case]<br>Time</li>
+				</ul>
+
+				<!-- 전, 후 -->
+				<a class="desig_prev">
+					<img src="image/prev.png" alt="desig_prev">
+				</a>
+				<a class="desig_next">
+					<img src="image/next.png" alt="desig_next">
+				</a>
+			</div>
+		</section>
+
+		<!-- all-->
+		<section>
+			<div class="all">
+				<li>ALL</li>
+			</div>
+
+			<div class="all_plus">
+				<ul class="all_p">
+					<li><img src="image/designer1-01.png" alt="designer1-01">[Purfume case]<br>Buterffly</li>
+					<li><img src="image/designer1-02.png" alt="designer1-02">[Purfume case]<br>Crouwn</li>
+					<li><img src="image/designer1-03.png" alt="designer1-03">[Purfume case]<br>Lotus</li>
+					<li><img src="image/designer1-04.png" alt="designer1-04">[Cushion Case]<br>Rose of Sharon</li>
+					<li><img src="image/designer1-05.png" alt="designer1-05">[Purfume case]<br>Peacock</li>
+					<li><img src="image/designer1-06.png" alt="designer1-06">[Cushion case]<br>Marble</li>
+					<li><img src="image/designer1-07.png" alt="designer1-07">[Cushion case]<br>Bell</li>
+					<li><img src="image/designer1-08.png" alt="designer1-08">[Cushion case]<br>Time</li>
+				</ul>
+			</div>
+		</section>
+
+		
+ </body>
+</html>
+
+<style>
+		.imformation {
+			position: relative;
+			top: 50px;
+			margin: 0 50px 0 50px;
+		}
+		li {
+			list-style-type: none;	
+		}
+		table {
+			width: 90%;
+			margin: auto;
+		}
+		
+		/* sns */
+		.sns {
+			vertical-align: middle;
+		}
+		.sns img {
+			position : relative;
+			text-align: center;
+			margin:0 auto;
+			display: block;;
+			width: 20px;
+		}
+		.sns li{
+			font-size: 1pt;
+			text-align: center;
+		}
+
+
+		/* name */
+		.name {
+			padding: 0 30px 0 30px;
+		}
+		.name img {
+			position : relative;
+			text-align: center;
+			margin: 0 auto;
+			display: block;
+			width: 100px;
+		}
+		.name li {
+			font-size: 10pt;
+			text-align: center;
+		}
+
+
+		/*carrer*/
+		.career {
+			vertical-align: top;
+			text-align: left;
+			padding: 20px 10px 0 0;
+			font-size: 10.5pt;
+		}
+		.career_imfor {
+			vertical-align: top;
+			padding: 20px 0 0 15px;
+			text-align: left;
+			font-size: 10.5pt;
+		}
+
+		/* 버튼 */
+		.but {
+			vertical-align: top;
+		}
+		.but hr {
+			background-color: #FFCCCC;
+			height: 2px;
+			border: 0px;
+		}
+		.but img {
+			position : relative;
+			top: 8px;
+			width: 190px;
+			display: block;
+			margin: auto;
+			text-align: center;
+		}
+		.but_name {
+			position: absolute;
+			top: 106px;
+			left: 375px;
+		}
+		.but_name li {
+			font-size: 10pt;
+			
+		}
+		.but_name a {
+			color: white;
+			text-decoration: none;
+		}
+
+		/* division */
+		.division hr {
+			position: relative;
+			width: 90%;
+			top: 60px;
+			background-color: gray;
+			height: 1.8px;
+			border: 0px;
+		}
+			
+
+		/*best*/
+		.best{
+			position: relative;
+			top: 80px;
+			left: 130px;
+			font-size: 11pt;
+		}
+		.best_slide{
+			position : relative;
+			top: 80px;
+			width: 540px;
+			height: 162px;
+			overflow: hidden;
+			text-align: center;
+			margin:0 auto;
+		}
+		.slide {
+			position: absolute;
+			left: 0;
+			top: 0;
+			transition: left 0.5s ease-out;
+		}
+		ul {
+			padding-left: 0px;
+			margin-left: 10px;
+		}
+		.slide li{
+			display: inline;
+			margin: 10px 10px 0px 10px;
+			float: left;
+			font-size: 5px;
+		}
+		.slide img{
+			width: 110px;
+			height: 110px;
+			display: block;
+			margin: 0 auto;
+		}
+		.desig_prev, .desig_next {
+			position: absolute;
+			top: 50%;
+			margin-top: -10px;
+		}
+		.desig_next {
+			right: 0;
+		}
+		.desig_prev {
+			left: 0;
+		}
+		.desig_prev img, .desig_next img {
+			width: 15px;
+			height: auto;
+			display: block;
+			margin: auto;
+		}
+
+
+		/*all*/
+		.all{
+			position: relative;
+			top: 125px;
+			left: 130px;
+			font-size: 11pt;
+		}
+		.all_plus{
+			position : relative;
+			top: 125px;
+			width: 540px;
+			height: 162px;
+			text-align: center;
+			margin: 0 auto;
+		}
+		.all_plus li{
+			display: inline;
+			padding: 0px 10px 30px 10px; /*padding: 위 오른쪽 아래 왼쪽*/
+			display: inline-block;
+			margin: 10px 0px 0px 0px;
+			float: left;
+			font-size: 5px;
+		}
+		.all_plus img{
+			width: 110px;
+			height: 110px;
+			display: block;
+			margin: 0 auto;
+		}
+
+
+
+		
+</style>
+
+<!-- best 슬라이드 -->
+<script>
+	var slides = document.querySelector('.slide'),
+		slide = document.querySelectorAll('.slide li'),
+		currentIdx = 0,
+		slideCount = slide.length,
+		prevBtn = document.querySelector('.desig_prev'),
+		nextBtn = document.querySelector('.desig_next'),
+		slideWidth = 110,
+		slideMarginR = 10,
+		slideMarginL = 10;
+
+	slides.style.width = (slideWidth + slideMarginR + slideMarginL) * slideCount + 'px';
+
+	function moveSlide(num) {
+		slides.style.left = -num * 130 + 'px';
+		currentIdx = num;
+	}
+
+	nextBtn.addEventListener('click', function() {
+		if(currentIdx < slideCount - 4) {
+			moveSlide(currentIdx + 1);
+		}
+		else {
+			moveSlide(0);
+		}
+	} );
+
+	prevBtn.addEventListener('click', function() {
+		if(currentIdx > 0) {
+			moveSlide(currentIdx - 1);
+		}
+		else {
+			moveSlide(slideCount - 4);
+		}
+	} );
+
+</script>

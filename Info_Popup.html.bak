@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Info_Popup</title>
+ </head>
+
+<!-- 나눔 고딕 글씨체 -->
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+
+<style>
+		body {
+			font-family: 'Nanum Gothic', sans-serif;
+			font-size: 12pt;
+		}
+		
+		input[type=text] {
+			padding : 3px;
+			border : 2px solid #ccc;
+			-webkit-border-radius: 5px;
+			border-radius: 5px;
+			vertical-align: bottom;
+		}
+
+		input[type=text]:focus {
+			border-color: #333;
+		}
+		
+		input[type=submit] {
+			padding: 5px 15px;
+			background: #ccc;
+			border: 0 none;
+			cursor: pointer;
+			-webkit-border-radius: 5px;
+			border-radius: 5px;
+		}
+
+		input[type=button] {
+			padding: 5px 15px;
+			background: #ccc;
+			border: 0 none;
+			cursor: pointer;
+			-webkit-border-radius: 5px;
+			border-radius: 5px;
+		}
+
+		#image_container {
+			width: 45%;
+			margin: auto;
+			border: 1px solid #ccc;
+			text-align: center;
+
+		}
+
+		#form {
+			text-align: center;
+		}
+
+		img {
+			width: 100%;
+			max-width: 50%;
+		}
+
+		.form_table{
+			width: 100%;
+			margin: auto;
+			font-size: 10pt;
+			position: fixed;
+		}
+
+
+</style>
+
+<!-- 첨부한 이미지 미리보기 -->
+<script>
+	function setImg(event) { 
+
+		var reader = new FileReader();
+
+		reader.onload = function(event) { 
+			var img = document.createElement("img"); 
+			img.setAttribute("src", event.target.result); 
+			document.querySelector("div#image_container").appendChild(img);
+		}; 
+		
+		reader.readAsDataURL(event.target.files[0]); 
+	}
+
+</script>
+
+<!-- 다음 주소 API 불러오기 -->
+<script src="http://dmaps.daum.net/map_js_init/postcode.v2.js?autoload=false"></script>
+
+
+<!-- 다음 주소 API 이용해 주소 검색 창 띄우기 -->
+<script>
+	//load함수를 이용하여 core스크럽트의 로딩이 완료된 후, 우편번호 서비스를 실행합니다.
+	function execPostCode() {
+		daum.postcode.load(function() {
+			new daum.Postcode({
+				oncomplete: function(data) {
+					var addr = ''; // 주소 변수
+					
+					if (data.userSelectedType === 'R') {
+						addr = data.roadAddress;	
+					} else {
+						addr = data.jibunAddress;
+					}
+					
+					document.getElementById('userZipcode').value = data.zonecode;
+					document.getElementById("userAddress").value = addr;
+
+					document.getElementById("userAddress").focus();
+
+				}
+			}).open();
+		});
+	}
+</script>
+
+ <body>
+			<!-- <h5 style="text-align: center;">개인정보입력 및 동의</h5> runat="server" -->
+			<h5 style="text-align: center;">개인정보입력 및 동의</h5>
+			<form id="form" action="#" method="post">
+					<table class="form_table">
+						<tr>
+							<td>이름</td>
+							<td><input type="text" /></td>
+						</tr>
+						<tr>
+							<td>전화번호</td>
+							<td><input type="text" /></td>
+						</tr>
+						<tr>
+							<td>주소</td>
+							<td><input type="text" placeholder="우편번호" /></td>
+							<td><input type="button" onclick="execPostCode()" value="검색"></button></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td><input type="text" placeholder="주소" /></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td><input type="text" placeholder="상세주소" /></td>
+							
+						</tr>
+
+						<tr>
+							<td>시안</td>
+							<td><input type="file" id="image" accept="image/*" onchange="setImg(event);"/></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td style="font-size:8pt;">※없으시다면 디자이너 작품 중 선택해서 올려주세요.</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td><div id="image_container"></div></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td style="font-size:10pt;">개인정보활용 동의<input type="checkbox" name="동의" value="" /></td>
+						</tr>
+					</table>
+
+					<br>
+					<br>
+
+					<input type="button" value="신청하기" onclick="alert('신청되었습니다!'); window.close()" style="cursor:pointer" />
+			</form>
+
+ </body>
+</html>

@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="Generator" content="EditPlus®">
+<meta name="Author" content="">
+<meta name="Keywords" content="">
+<meta name="Description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Product_Detail</title>
+<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="css/style1.css" /> 
+ <link href="http://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" >
+</head>
+<body>
+	<script>
+ 				/* 샘플키트 창 불러오기 */
+				function popupOpen() {
+					var url = "Info_Popup.html";
+					var name = "개인정보 팝업";
+					var specs = "width=0, height=0, top=100, left=1000, location=no";
+					window.open(url, name, specs);
+					return false;
+				}
+
+	</script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+		AOS.init();
+	</script>
+	<header>
+			<div class="wrapper">
+				<a href="./main.html"><img src="image/cat.png" alt="TMT"></a> <!-- 로고 -->
+				<nav>
+					<ul class="menu">
+						<li><a href="./exhibition.html" id=bol>Exhibition</a></li>
+						<li><a href="./sale.html" id=bol>Sale</a></li>
+						<li><a href="./customizing.html" id=bol>Customizing</a></li>
+						<li><a href="./Recommended.html" id=bol>Recommended coordination</a></li>
+					</ul>
+				</nav>
+			</div>
+	</header>
+
+
+	<content>
+		<div class="entire">
+			<img src="image/pink.png" alt="PINK" style="width: 90%; height: 5%; margin:0 0 30px 0;">
+			<ul class="sel1">
+				<li style="color: gray; font-weight: bold;">제품 상세</li>
+				<li>Product detail</li>
+			</ul>
+			<!--<img src="image/pdt_detail_bar.png" alt="title_bar" style="width:95%; height:5%; margin:0 0 30px 0; float:top;">-->
+			
+			<!-- 제품 이미지 삽입 -->
+			<div class ="pdt_Detail">
+				<img src="image/main_pdt_image.jpg", alt="Product" style="width:500px; height:500px; margin:0 0 80px 40px;">
+			</div>
+			
+			
+			<!-- 제품 구입 -->
+			<div class ="pdt_purchase">
+				<ins style="padding:10px;">#끌로디피에로</ins>
+				<p style="padding: 10px; font-size: 14pt;"><b>[20FW] 백포인트 프린트 원피스 PNA6076</b></p>
+				<hr style="color:#666666;">
+				<div style="margin: 10px; font-size: 12pt;">배송정보
+					<span style="margin: 0px 10px 0px 10px; border: 1px solid ; display: inline-block;">안동택배</span>
+					<span style="margin: 0px 10px 0px 0px; border: 1px solid ; display: inline-block;">멀티택배</span>
+					12/05 도착예정
+				</div>
+				<div style="padding: 0px 10px 10px 10px; font-size: 12pt;">배송비&ensp;&ensp;&ensp;
+					무료
+				</div>
+				<hr style="color:#666666; margin:2px;">
+				<div>
+					<p style="padding:15px 10px 23px 15px ; font-size: 18pt;"><b>649,000 원</b></p>
+				</div>
+			
+			<!--select box-->
+				<div class="custom-select" style="width:300px;">
+					<select>
+						<option value="0">size</option>
+						<option value="1">S</option>
+						<option value="2">M</option>
+						<option value="3">L</option>
+					</select>
+				</div>
+
+			<!--합계, 수량 추가--> 
+				<div class="button_count">
+					<form name='form'>
+						<img src='image/remove.png' id="minus" onclick="javascript_:change(-1);" style="width:25px; heigt:25px; float:left; margin:10px 0px 10px 10px;">
+						<input type='text' name='count' value='1' size='3' readonly>
+						<img src='image/add.png' id="plus" onclick='javascript_:change(1);' style="width:25px; height:25px; float:left; margin:10px 0px 10px 0px;">
+						<p id="demo">649,000 원</p>
+					</form>
+				</div>
+				
+				
+
+			<!-- purchase button-->
+				<div style="width=auto; text-align:center;">
+					<a href="./info_Popup.html" onClick="window.open(this.href,'팝업창', 'width=550px, height=500px, top=50px, left=250px'); return false;"><button class="purchase-button">구매하기</button></a>
+				</div>
+			</div>
+
+<script language='javascript'>
+//버튼 이벤트시 수량 증가
+function change(num) {
+ var x  = document.form;
+ var y = Number(x.count.value) + num;
+ if (y < 1) y = 1;
+ x.count.value = y;
+  }
+
+var x, i, j, l, ll, selElmnt, a, b, c;
+
+x = document.getElementsByClassName("custom-select");
+l = x.length;
+for (i = 0; i < l; i++) {
+  selElmnt = x[i].getElementsByTagName("select")[0];
+  ll = selElmnt.length;
+
+  a = document.createElement("DIV");
+  a.setAttribute("class", "select-selected");
+  a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+  x[i].appendChild(a);
+
+  b = document.createElement("DIV");
+  b.setAttribute("class", "select-items select-hide");
+  for (j = 1; j < 4; j++) {
+  
+    c = document.createElement("DIV");
+    c.innerHTML = selElmnt.options[j].innerHTML;
+    c.addEventListener("click", function(e) {
+
+        var y, i, k, s, h, sl, yl;
+        s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+        sl = s.length;
+        h = this.parentNode.previousSibling;
+        for (i = 0; i < sl; i++) {
+          if (s.options[i].innerHTML == this.innerHTML) {
+            s.selectedIndex = i;
+            h.innerHTML = this.innerHTML;
+            y = this.parentNode.getElementsByClassName("same-as-selected");
+            yl = y.length;
+            for (k = 0; k < yl; k++) {
+              y[k].removeAttribute("class");
+            }
+            this.setAttribute("class", "same-as-selected");
+            break;
+          }
+        }
+        h.click();
+    });
+    b.appendChild(c);
+  }
+  x[i].appendChild(b);
+  a.addEventListener("click", function(e) {
+
+      e.stopPropagation();
+      closeAllSelect(this);
+      this.nextSibling.classList.toggle("select-hide");
+      this.classList.toggle("select-arrow-active");
+    });
+}
+function closeAllSelect(elmnt) {
+
+  var x, y, i, xl, yl, arrNo = [];
+  x = document.getElementsByClassName("select-items");
+  y = document.getElementsByClassName("select-selected");
+  xl = x.length;
+  yl = y.length;
+  for (i = 0; i < yl; i++) {
+    if (elmnt == y[i]) {
+      arrNo.push(i)
+    } else {
+      y[i].classList.remove("select-arrow-active");
+    }
+  }
+  for (i = 0; i < xl; i++) {
+    if (arrNo.indexOf(i)) {
+      x[i].classList.add("select-hide");
+    }
+  }
+}
+
+document.addEventListener("click", closeAllSelect);
+</script>
+
+
+			<!-- 상품상세 -->
+			<div class="Detail-content">
+				<p style="font-size:13pt; padding:0 0 20px 0px;">제품상세정보</p>
+				<hr style="width: 105%; margin: 0 0 5% 0; text-align: center;">
+				
+				<div class="details">
+					<div class="fade" data-aos="fade-up" data-aos-easing="ease-in-out">
+						<img src="image/sub_pdt_img0.jpg", alt="Product" style="vertical-align: top; margin:30px 10% 50px 10%; width:80%;">
+						<p>상품설명</p>
+						<p>부드럽게 바디라인을 따라 떨어지는 실크의 소재감과 멋스러운 프린팅이 돋보이는 원피스입니다.</p>
+						<p>살짝 올라오는 넥라인, 허리부분을 강조하는 디자인, 뒷부분의 트임과 타이 디테일은 우아한 실루엣을 연출합니다.</p>
+						<p>7부 소매가 특징적이며, 레더자켓과 매치하면 프렌치 무드의 스타일리시한 룩을 완성할 수 있습니다.</p>
+					</div>
+					<div class="fade" data-aos="fade-up" data-aos-easing="ease-in-out">
+						<img src="image/sub_pdt_img1.jpg", alt="Product" style="margin:80px 10% 50px 10%; width:80%;">
+					</div>
+					<div class="fade" data-aos="fade-up" data-aos-easing="ease-in-out">
+						<img src="image/sub_pdt_img2.jpg", alt="Product" style="margin:0px 10% 50px 10%; width:80%;">
+					</div>
+					<div class="fade" data-aos="fade-up" data-aos-easing="ease-in-out">
+						<img src="image/sub_pdt_img3.jpg", alt="Product" style="margin:0px 10% 50px 10%; width:80%;">
+					</div>
+					<div class="fade" data-aos="fade-up" data-aos-easing="ease-in-out">
+						<img src="image/sub_pdt_img5.jpg", alt="Product" style="margin:0px 10% 100px 10%; width:80%;">
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</content>
+	
+	
+	<footer>
+			<div class="foot">
+				<ul class="bottom">
+					<li>Tel : 054-820-5114</li>
+
+					<li>Address : 1375, Gyeongdong-ro, Andong-si, Gyeongsangbuk-do</li>
+
+					<li>E-mail :  banmu_@naver.com</li>
+
+					<li>COPYRIGHT@Online Beauty & Fashion Exhibition</li>
+
+				</ul>
+			</div>
+
+	</footer>
+	
+</body>
+
+</html>

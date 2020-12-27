@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>TMT Sell</title>
+  <link rel="stylesheet" href="css/style.css" />
+ </head>
+ <body>
+ 	<img src="image/sale.png" alt="SALE" style="width: 155%;">
+		<header>
+			<div class="wrapper">
+				<img src="image/cat.png" alt="TMT"> <!-- 로고 -->
+				<nav>
+					<ul class="menu">
+						<li><a href="">Exhibition</a></li>
+						<li><a href="">Sale</a></li>
+						<li><a href="">Customizing</a></li>
+						<li><a href="">Recommended coordination</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<footer>
+			<div class="foot">
+				<ul class="bottom">
+					<li>Tel : 054-820-5114</li>
+					
+					<li>Address : 1375, Gyeongdong-ro, Andong-si, Gyeongsangbuk-do</li>
+
+					<li>E-mail :  banmu_@naver.com</li>
+
+					<li>COPYRIGHT@Online Beauty & Fashion Exhibition</li>
+				</ul>
+			</div>
+		</footer>
+		
+		<div class="product">
+			<ul class="sale">
+				<li>제품 판매</li>
+				<li>Sale</li>
+				<img src="image/arrow.png" alt="ARROW">
+			</ul>
+		</div>
+
+	</body>
+</html>
+

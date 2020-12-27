@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>TMT Exhibition</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- Fade 효과를 주기위한 외부 css -->
+  <link href="http://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" >
+ </head>
+ <body>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+		AOS.init();
+	</script>
+		<header>
+			<div class="wrapper">
+				<a href="./main.html"><img src="image/cat.png" alt="TMT"></a> <!-- 로고 -->
+				<nav>
+					<ul class="menu">
+						<li><a href="./exhibition.html" id=bol>Exhibition</a></li>
+						<li><a href="./sale.html" id=bol>Sale</a></li>
+						<li><a href="./customizing.html" id=bol>Customizing</a></li>
+						<li><a href="" id=bol>Recommended coordination</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		
+		<footer>
+			<div class="foot">
+				<ul class="bottom">
+					<li>Tel : 054-820-5114</li>
+					
+					<li>Address : 1375, Gyeongdong-ro, Andong-si, Gyeongsangbuk-do</li>
+
+					<li>E-mail :  banmu_@naver.com</li>
+
+					<li>COPYRIGHT@Online Beauty & Fashion Exhibition</li>
+				</ul>
+			</div>
+		</footer>
+
+	<div class="saleimg">
+		<img src="image/exhibition.png" style="width: 100%">
+			<div class="content">
+				<div class="fade_2" data-aos="fade-down" data-aos-easing="ease-in-out">
+					<p>전시회</p>
+					<p>Exhibition</p>
+					<p><img src="image/arrow.svg"></p>
+				</div>
+			</div>
+		</div>
+
+		<div class="select">
+			<ul class="sel">
+				<li><a href="" id=col>전체 전시회</a></li>
+				<li><a href="" style="color: #FAFAFA;">All Exhibition</a></li>
+			</ul>
+			<img src="image/pink.png" alt="PINK" style="width: 74%; height: 40px;">
+		</div>
+		
+	<div class="fade" data-aos="fade-up" data-aos-easing="ease-in-out">
+		<div class="image">
+			<img src="image/ei1.png" style="padding: 0px 40px 100px 28px;">
+			<p style="left: 66px;">K-BEAUTY EXPO</p>
+			<a href="./exhibition_detail.html"><img src="image/ei2.png" style="padding: 0px 40px 100px 30px;"></a>
+			<p style="left: 310px;">FASHION KODE<br>FESTIVAL</p>
+			<img src="image/ei3.png" style="padding: 0px 40px 100px 30px;">
+			<p style="left: 545.5px;">Deagu collection</p>
+			<img src="image/ei4.png" style="padding: 0px 40px 100px 30px;">
+			<p style="left: 797px;">대구패션페어</p>
+		</div>
+	</div>
+
+	<div class="fade_1" data-aos="fade-up" data-aos-easing="ease-in-out">
+		<div class="img1">
+			<img src="image/ei5.png" style="padding: 0px 40px 100px 28px;">
+			<p style="left: 66.5px;">2019 S/S<br>하이서울패션쇼</p>
+			<img src="image/ei6.png" style="padding: 0px 40px 100px 30px;">
+			<p style="left: 308.5px;">2020 코카<br> 디지털 패션위크</p>
+			<img src="image/ei7.png" style="padding: 0px 40px 100px 30px;">
+			<p style="left: 525.9px;">2019 엠코르셋 패션쇼<br>[The M Corset Moment]</p>
+			<img src="image/ei8.png" style="padding: 0px 40px 100px 30px;">
+			<p style="left: 781px;">Fashion is to Love<br>패션쇼</p>
+		</div>
+	</div>
+	</body>
+</html>

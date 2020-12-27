@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>customizing</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- 제이쿼리 -->
+  <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+ </head>
+ <body>
+       <!--헤더-->
+      <header>
+            <div class="wrapper">
+               <a href="./main.html"><img src="image/cat.png" alt="TMT"></a> <!-- 로고 -->
+               <nav>
+                  <ul class="menu">
+                    <li><a href="./exhibition.html" id=bol>Exhibition</a></li>
+					<li><a href="./sale.html" id=bol>Sale</a></li>
+					<li><a href="./customizing.html" id=bol>Customizing</a></li>
+					<li><a href="./Recommended.html" id=bol>Recommended coordination</a></li>
+                  </ul>
+               </nav>
+            </div>
+      </header>
+
+      
+   <div class="custo">
+      <!-- 상단바-->
+      <div class="top_all">
+            <div class="customizing_title">
+               <img src="image/custo_bar.png" alt="custo_bar">
+               <nav>
+                  <ul class="bar_menu">
+                     <li><a href="javascript:scroll_b();" id=col> Beauty </a></li>
+                     <li><a href="javascript:scroll_f();" id=col> Fashion </a></li>
+                     <li><a href="javascript:scroll_d();" id=col> Designer </a></li>
+                  </ul>
+               </nav>
+            </div>
+      </div>
+
+      <!--베스트-->
+      <div class="best_all">
+         <div class="best">
+            <li style="font-weight: bold"> BEST </li>
+         </div>
+         <div class="best_bar">
+            <hr>
+         </div>
+         
+         <div class="best_slide">
+            <!--슬라이드 이미지-->
+            <ul class="slide">
+               <li><img src="image/designer1-10.png" alt="designer1-10">[Purfume case]<br>Bee</li>
+               <li><img src="image/designer1-01.png" alt="designer1-01" class="designer1">[Purfume case]<br>Buterffly</li>
+               <li><img src="image/designer1-08.png" alt="designer1-08" class="designer1">[Cushion case]<br>Time</li>
+               <li><img src="image/designer1-13.png" alt="designer1-13">[Purfume case]<br>Mini Bag</li>
+               <li><img src="image/fashion-08.png" alt="fashion-08">[Dress]<br>Wine Flower</li>
+               <li><img src="image/fashion-01.png" alt="fashion-01">[Dress]<br>Black Buterffly</li>
+               <li><img src="image/fashion-10.png" alt="fashion-10">[Dress]<br>Graceful</li>
+               <li><img src="image/fashion-03.png" alt="fashion-03">[Dress]<br>Peacock</li>
+            </ul>
+            <!-- 전, 후 -->
+            <a class="custo_prev">
+               <img src="image/prev.png" alt="custo_prev">
+            </a>
+            <a class="custo_next">
+               <img src="image/next.png" alt="custo_next">
+            </a>
+         </div>
+      </div>
+
+
+      <!-- 뷰티-->
+      <div class="beauty_all">
+         <div class="beauty">
+            <li style="font-weight: bold"><a name="nav_b"> BEAUTY </a></li>
+         </div>
+         <div class="beauty_bar">
+            <hr>
+         </div>
+
+         <div class="beauty_plus animated">
+            <ul class="beauty_p">
+               <li><img src="image/designer1-01.png" alt="designer1-01" class="designer1">[Purfume case]<br>Buterffly</li>
+               <li><img src="image/designer1-02.png" alt="designer1-02" class="designer1">[Purfume case]<br>Crouwn</li>
+               <li><img src="image/designer1-03.png" alt="designer1-03" class="designer1">[Purfume case]<br>Lotus</li>
+               <li><img src="image/designer1-04.png" alt="designer1-04" class="designer1">[Cushion Case]<br>Rose of Sharon</li>
+               <li><img src="image/designer1-05.png" alt="designer1-05" class="designer1">[Purfume case]<br>Peacock</li>
+               <li><img src="image/designer1-06.png" alt="designer1-06" class="designer1">[Cushion case]<br>Marble</li>
+               <li><img src="image/designer1-07.png" alt="designer1-07" class="designer1">[Cushion case]<br>Bell</li>
+               <li><img src="image/designer1-08.png" alt="designer1-08" class="designer1">[Cushion case]<br>Time</li>
+               <li><img src="image/designer1-09.png" alt="designer1-09">[Cushion case]<br>Flower</li>
+               <li><img src="image/designer1-10.png" alt="designer1-10">[Purfume case]<br>Bee</li>
+               <li><img src="image/designer1-13.png" alt="designer1-13">[Purfume case]<br>Mini Bag</li>
+               <li><img src="image/designer1-14.png" alt="designer1-14">[Purfume Case]<br>Crystal</li>
+               <li><img src="image/designer1-11.png" alt="designer1-11">[Purfume case]<br>Full Moon</li>
+               <li><img src="image/designer1-12.png" alt="designer1-12">[Purfume Case]<br>Love Medicine</li>
+               
+               
+            </ul>
+            <!-- 뷰티 더보기 버튼 -->
+            <div class="b_more">
+               <p class="b_btn" style="font-weight: bold"> 더보기 </p>
+            </div>
+         </div>
+      </div>
+
+      <!-- 패션-->
+      <div class="fashion_all">
+         <div class="fashion">
+            <li style="font-weight: bold"><a name="nav_f"> FASHION </a></li>
+         </div>
+         <div class="fashion_bar">
+            <hr>
+         </div>
+
+         <div class="fashion_plus animated">
+            <ul class="fashion_p">
+               <li><img src="image/fashion-01.png" alt="fashion-01">[Dress]<br>Black Buterffly</li>
+               <li><img src="image/fashion-02.png" alt="fashion-02">[Dress]<br>White Warrior</li>
+               <li><img src="image/fashion-03.png" alt="fashion-03">[Dress]<br>Peacock</li>
+               <li><img src="image/fashion-04.png" alt="fashion-04">[Dress]<br>Red Flower</li>
+               <li><img src="image/fashion-05.png" alt="fashion-05">[Dress]<br>Sky_blue Wrap</li>
+               <li><img src="image/fashion-06.png" alt="fashion-06">[Dress]<br>Pink Bird</li>
+               <li><img src="image/fashion-07.png" alt="fashion-07">[Dress]<br>Wedding</li>
+               <li><img src="image/fashion-08.png" alt="fashion-08">[Dress]<br>Wine Flower</li>
+               <li><img src="image/fashion-09.png" alt="fashion-09">[Dress]<br>Black Princess</li>
+               <li><img src="image/fashion-10.png" alt="fashion-10">[Dress]<br>Graceful</li>
+               <li><img src="image/fashion-11.png" alt="fashion-11">[Dress]<br>Purple Knitwear</li>
+               <li><img src="image/fashion-12.png" alt="fashion-12">[Dress]<br>Green Fairy</li>
+               <li><img src="image/fashion-13.png" alt="fashion-13">[Dress]<br>Blue Leaf</li>
+            </ul>
+            <!-- 패션 더보기 버튼 -->
+            <div class="f_more">
+               <p class="f_btn" style="font-weight: bold"> 더보기 </p>
+            </div>
+         </div>
+
+      </div>
+
+      <!-- 디자이너-->
+      <div class="designer_all">
+         <div class="designer">
+            <li style="font-weight: bold"><a name="nav_d"> DESIGNER </a></li>
+         </div>
+         <div class="designer_bar">
+            <hr>
+         </div>
+
+         <div class="designer_plus animated">
+            <ul class="designer_p">
+               <li><img src="image/designer-01.png" alt="designer-01" class="designer1">[Beauty Designer]<br>Kim Li A</li>
+               <li><img src="image/designer-02.png" alt="designer-02">[Fashion Designer]<br>Adela</li>
+               <li><img src="image/designer-05.png" alt="designer-05">[Beauty Designer]<br>Yoon Ji Woo</li>
+               <li><img src="image/designer-06.png" alt="designer-06">[Fashion Designer]<br>Woo Young Mi</li>
+               <li><img src="image/designer-03.png" alt="designer-03">[Beauty Designer]<br>Haisley</li>
+               <li><img src="image/designer-04.png" alt="designer-04">[Fashion Designer]<br>Belita</li>
+            </ul>
+            <!-- 디자이너 더보기 버튼 -->
+            <div class="d_more">
+               <p class="d_btn" style="font-weight: bold"> 더보기 </p>
+            </div>
+         </div>
+      </div>
+
+      <div class="mu">
+         <p> 마지막 여백주고 싶어요 ㅜㅜ </p>
+      </div>
+   </div>
+
+      <!--푸터-->
+      <footer>
+            <div class="foot">
+               <ul class="bottom">
+                  <li>Tel : 054-820-5114</li>
+                  <li>Address : 1375, Gyeongdong-ro, Andong-si, Gyeongsangbuk-do</li>
+                  <li>E-mail :  banmu_@naver.com</li>
+                  <li>COPYRIGHT@Online Beauty & Fashion Exhibition</li>
+
+               </ul>
+            </div>
+
+      </footer>
+
+ </body>
+
+
+ <style>
+       body{
+         bottom: 10%;
+         background: black;
+      }
+
+      /* 상단바 이미지 */
+      .customizing_title img {
+         position: relative;
+         top: 120px;
+         width: 1130px;
+         height: auto;
+         display: block;
+         margin: auto;
+      }
+
+        /* 상단바 메뉴 */
+      .bar_menu {
+         position: absolute;
+         top: 199px;
+         left: 200px;
+         list-style-type: none;
+         font-weight: bold;
+      }
+      .bar_menu li {
+         display: inline;
+         border-left: 1px solid #ffffff;
+         padding: 0px 30px 0px 30px; /*padding: 위 오른쪽 아래 왼쪽*/
+         margin: 30px 0px 0px 0px;
+         
+      }
+      .bar_menu li:first-child{
+         border-left: none;
+      }
+      .bar_menu a{
+         color: white;
+         padding: 0px 15px;
+      }
+
+      /* best */
+      .best{
+         position: relative;
+         top: 170px;
+         left: 250px;
+         list-style-type: none;
+         color: #ffffff;
+      }
+      .best_slide{
+         position : relative;
+         top: 170px;
+         width: 840px;
+         height: 240px;
+         overflow: hidden;
+         text-align: center;
+         list-style-type: none;
+         margin:0 auto;
+      }
+      .slide {
+         position: absolute;
+         left: 0;
+         top: 0;
+         /*width: 1680px;*/
+         transition: left 0.5s ease-out;
+      }
+      .slide li{
+         display: inline;
+         /*padding: 0px 30px 0px 30px;*/ /*padding: 위 오른쪽 아래 왼쪽*/
+         margin: 30px 30px 0px 30px;
+         float: left;
+         font-size: 8pt;
+         color: #ffffff;
+      }
+      .slide img{
+         width: 150px;
+         height: 150px;
+         display: block;
+         margin: auto;
+      }
+      .custo_prev, .custo_next {
+         position: absolute;
+         top: 50%;
+         margin-top: -30px;
+      }
+      .custo_next {
+         right: 0;
+      }
+      .custo_prev {
+         left: 0;
+      }
+      .custo_prev img, .custo_next img {
+         width: 20px;
+         height: auto;
+         display: block;
+         margin: auto;
+      }
+      
+      
+      /*beauty*/
+      .beauty li{
+         position: relative;
+         top: 300px;
+         left: 250px;
+         list-style-type: none;
+         color: #ffffff;
+      }
+      .beauty_plus{
+         position : relative;
+         top: 300px;
+         width: 840px;
+         height: 230px;
+         text-align: center;
+         list-style-type: none;
+         margin:0 auto;
+         overflow: hidden;
+      }
+      .beauty_plus li{
+         padding: 0px 30px 10px 30px; /*padding: 위 오른쪽 아래 왼쪽*/
+         display: inline;
+         margin: 30px 0px 0px 0px;
+         float: left;
+         font-size: 8pt;
+         color: #ffffff;
+      }
+      .beauty_plus img{
+         width: 150px;
+         height: 150px;
+         display: block;
+         margin: auto;
+      }
+      .b_hide, .b_more {
+         display: block;
+         width: 100%;
+         padding: 80px 0 0;
+         position: absolute;
+         bottom: 0;
+         left: 0;
+         text-align: center;
+         background: -moz-linear-gradient(  top,  rgba(0, 0, 0, 0) 0%,  rgba(0, 0, 0, 1) 60%  );
+         background: -webkit-linear-gradient(  top,  rgba(0, 0, 0, 0) 0%,  rgba(0, 0, 0, 1) 60%  );
+         background: linear-gradient(  to bottom,  rgba(0, 0, 0, 0) 0%,  rgba(0, 0, 0, 1) 60%  );
+         filter: progid:DXImageTransform.Microsoft.gradient(  startColorstr='#ff000000',  endColorstr='#000000',  GradientType=0  );
+      }
+      .b_more p {
+         display: inline-block;
+         color: #fff;
+         cursor: pointer;
+         background: #ffcccc;
+         padding: 3px 3px 3px 3px;
+         width: 800px;
+         border-radius: 20px;
+         font-size: 9pt;
+      }
+
+
+
+      /*fashion*/
+      .fashion li{
+         position: relative;
+         top: 450px;
+         left: 250px;
+         list-style-type: none;
+         color: #ffffff;
+      }
+      .fashion_plus{
+         position : relative;
+         top: 450px;
+         width: 840px;
+         height: 230px;
+         text-align: center;
+         list-style-type: none;
+         margin:0 auto;
+         overflow: hidden;
+      }
+      .fashion_plus li{
+         padding: 0px 30px 10px 30px; /*padding: 위 오른쪽 아래 왼쪽*/
+         display: inline;
+         margin: 30px 0px 0px 0px;
+         float: left;
+         font-size: 8pt;
+         color: #ffffff;
+      }
+      .fashion_plus img{
+         width: 150px;
+         height: 150px;
+         display: block;
+         margin: auto;
+      }
+      .f_hide, .f_more {
+         display: block;
+         width: 100%;
+         padding: 80px 0 0;
+         position: absolute;
+         bottom: 0;
+         left: 0;
+         text-align: center;
+         background: -moz-linear-gradient(  top,  rgba(0, 0, 0, 0) 0%,  rgba(0, 0, 0, 1) 60%  );
+         background: -webkit-linear-gradient(  top,  rgba(0, 0, 0, 0) 0%,  rgba(0, 0, 0, 1) 60%  );
+         background: linear-gradient(  to bottom,  rgba(0, 0, 0, 0) 0%,  rgba(0, 0, 0, 1) 60%  );
+         filter: progid:DXImageTransform.Microsoft.gradient(  startColorstr='#ff000000',  endColorstr='#000000',  GradientType=0  );
+      }
+      .f_more p {
+         display: inline-block;
+         color: #fff;
+         cursor: pointer;
+         background: #ffcccc;
+         padding: 3px 3px 3px 3px;
+         width: 800px;
+         border-radius: 20px;
+         font-size: 9pt;
+      }
+
+
+
+      /*designer*/
+      .designer li {
+         position: relative;
+         top: 600px;
+         left: 250px;
+         list-style-type: none;
+         color: #ffffff;
+      }
+      .designer_plus{
+         position : relative;
+         top: 600px;
+         width: 840px;
+         height: 230px;
+         text-align: center;
+         list-style-type: none;
+         margin:0 auto;
+         overflow: hidden;
+      }
+      .designer_plus li{
+         padding: 0px 30px 10px 30px; /*padding: 위 오른쪽 아래 왼쪽*/
+         display: inline;
+         margin: 30px 0px 0px 0px;
+         float: left;
+         font-size: 9pt;
+         color: #ffffff;
+      }
+      .designer_plus img{
+         width: 150px;
+         height: 150px;
+         display: block;
+         margin: auto;
+      }
+      .d_hide, .d_more {
+         display: block;
+         width: 100%;
+         padding: 80px 0 0;
+         position: absolute;
+         bottom: 0;
+         left: 0;
+         text-align: center;
+         background: -moz-linear-gradient(  top,  rgba(0, 0, 0, 0) 0%,  rgba(0, 0, 0, 1) 60%  );
+         background: -webkit-linear-gradient(  top,  rgba(0, 0, 0, 0) 0%,  rgba(0, 0, 0, 1) 60%  );
+         background: linear-gradient(  to bottom,  rgba(0, 0, 0, 0) 0%,  rgba(0, 0, 0, 1) 60%  );
+         filter: progid:DXImageTransform.Microsoft.gradient(  startColorstr='#ff000000',  endColorstr='#000000',  GradientType=0  );
+         /*
+         background: -moz-linear-gradient(  top,  rgba(255, 255, 255, 0) 0%,  rgba(255, 255, 255, 1) 60%  );
+         background: -webkit-linear-gradient(  top,  rgba(255, 255, 255, 0) 0%,  rgba(255, 255, 255, 1) 60%  );
+         background: linear-gradient(  to bottom,  rgba(255, 255, 255, 0) 0%,  rgba(255, 255, 255, 1) 60%  );
+         filter: progid:DXImageTransform.Microsoft.gradient(  startColorstr='#00ffffff',  endColorstr='#ffffff',  GradientType=0  );*/
+      }
+      .d_more p {
+         display: inline-block;
+         color: #fff;
+         cursor: pointer;
+         background: #ffcccc;
+         padding: 3px 3px 3px 3px;
+         width: 800px;
+         border-radius: 20px;
+         font-size: 9pt;
+      }
+
+      
+      /* 더보기 슬라이드 */
+      .animated {
+         -webkit-animation-duration: 2s;
+         animation-duration: 2s;
+         -webkit-animation-fill-mode: both;
+         animation-fill-mode: both;
+      }
+      @-webkit-keyframes slideDown {
+         0% {
+            opacity: 1;
+            -webkit-transform: translateY(-25px);
+            transform: translateY(-25px);
+         }
+         100% {
+            opacity: 1;
+            -webkit-transform: translateY(0);
+            transform: translateY(0);
+         }
+      }
+      @keyframes slideDown {
+         0% {
+            opacity: 1;
+            -webkit-transform: translateY(-25px);
+            transform: translateY(-25px);
+         }
+         100% {
+            opacity: 1;
+            -webkit-transform: translateY(0);
+            transform: translateY(0);
+         }
+      }
+      .slide-down {
+         -webkit-animation-name: slideDown;
+         animation-name: slideDown;
+      }
+      @-webkit-keyframes slideUp {
+         0% {
+            -webkit-transform: translateY(25px);
+            transform: translateY(25px);
+         }
+         100% {
+            -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+         }
+      }
+      @keyframes slideUp {
+         0% {
+            -webkit-transform: translateY(25px);
+            transform: translateY(25px);
+         }
+         100% {
+            -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+         }
+      }
+      .slide-up {
+         -webkit-animation-name: slideUp;
+         animation-name: slideUp;
+      }
+      .slide-up {
+         height: 230px;
+         padding-bottom: 0; /* 닫을 시 화면 패딩으로 크기지정 */
+         overflow: hidden;
+      } /* 닫기 시 화면 크기 */
+      .slide-down {
+         height: 930px;
+         overflow: visible;
+         padding-bottom: 30px; /* 열었을 시 화면 패딩으로 위요소와 50px 차 */
+      }
+      .slide-down_d {
+         height: 500px;
+         overflow: visible;
+         padding-bottom: 30px; /* 열었을 시 화면 패딩으로 위요소와 50px 차 */
+      }
+      
+
+
+      /* 구분선 */
+      .best_bar hr {
+         position: relative;
+         top: 170px;
+         left: 200px;
+         width: 1120px;
+         background-color: #FFCCCC;
+         height: 2px;
+         border: 0px;
+      }
+      .beauty_bar hr {
+         position: relative;
+         top: 300px;
+         left: 200px;
+         width: 1120px;
+         background-color: #FFCCCC;
+         height: 2px;
+         border: 0px;
+      }
+      .fashion_bar hr {
+         position: relative;
+         top: 450px;
+         left: 200px;
+         width: 1120px;
+         background-color: #FFCCCC;
+         height: 2px;
+         border: 0px;
+      }
+      .designer_bar hr {
+         position: relative;
+         top: 600px;
+         left: 200px;
+         width: 1120px;
+         background-color: #FFCCCC;
+         height: 2px;
+         border: 0px;
+      }
+      
+      .mu {
+         position: relative;
+         top: 800px;
+      }
+      .mu p {
+         color: #fff;
+      }
+
+
+
+      
+ </style>
+
+
+ <script>
+   /* 디자이너1 팝업 */
+    var img = document.getElementsByClassName('designer1');
+   for (var x=0; x<img.length; x++ ){
+      img.item(x).onclick=function() {
+         window.open("custo_designer-1.html","designer-1", "width=800px, height=550px, left=350px, top=70px")
+      };/* 팝업창주소, 이름, 크기 위치 */
+   }
+
+
+   /* best 슬라이드 */
+   var slides = document.querySelector('.slide'),
+      slide = document.querySelectorAll('.slide li'),
+      currentIdx = 0,
+      slideCount = slide.length,
+      prevBtn = document.querySelector('.custo_prev'),
+      nextBtn = document.querySelector('.custo_next'),
+      slideWidth = 150,
+      slideMarginR = 30,
+      slideMarginL = 30;
+      slides.style.width = (slideWidth + slideMarginR + slideMarginL) * slideCount + 'px';
+   function moveSlide(num) {
+      slides.style.left = -num * 210 + 'px';
+      currentIdx = num;
+   }
+   nextBtn.addEventListener('click', function() {
+      if(currentIdx < slideCount - 4) {
+         moveSlide(currentIdx + 1);
+      }
+      else {
+         moveSlide(0);
+      }
+   } );
+   prevBtn.addEventListener('click', function() {
+      if(currentIdx > 0) {
+         moveSlide(currentIdx - 1);
+      }
+      else {
+         moveSlide(slideCount - 4);
+      }
+   } );
+
+   
+   /* 뷰티 더보기 */
+   $(function() {
+      $('.b_more').on('click', function() {
+         if ($(this).children().is('.b_btn')) {
+            $(this).html('<p class="close">닫기</p>').addClass('b_hide');
+            $(this).parent().removeClass('slide-up').addClass('slide-down');
+         }
+         else {
+            $(this).html('<p class="b_btn">더보기</p>').removeClass('b_hide');
+            $(this).parent().removeClass('slide-down').addClass('slide-up');
+            window.scrollTo(0, 400);
+         }
+      });
+   });
+
+
+   /* 패션 더보기 */
+   $(function() {
+      $('.f_more').on('click', function() {
+         if ($(this).children().is('.f_btn')) {
+            $(this).html('<p class="close">닫기</p>').addClass('f_hide');
+            $(this).parent().removeClass('slide-up').addClass('slide-down');
+         }
+         else {
+            $(this).html('<p class="f_btn">더보기</p>').removeClass('f_hide');
+            $(this).parent().removeClass('slide-down').addClass('slide-up');
+            window.scrollTo(0, 800);
+         }
+      });
+   });
+
+
+   /* 디자이너 더보기 */
+   $(function() {
+      $('.d_more').on('click', function() {
+         if ($(this).children().is('.d_btn')) {
+            $(this).html('<p class="close">닫기</p>').addClass('d_hide');
+            $(this).parent().removeClass('slide-up').addClass('slide-down_d');
+            $().css()
+         }
+         else {
+            $(this).html('<p class="d_btn">더보기</p>').removeClass('d_hide');
+            $(this).parent().removeClass('slide-down_d').addClass('slide-up');
+            window.scrollTo(0, 1450);
+         }
+      });
+   });
+
+
+
+   /* 뷰티 페이지내 위치이동 */
+   function scroll_b() {
+      window.scrollTo(0, 400);
+   }
+   /* 패션 페이지내 위치이동 */
+   function scroll_f() {
+      window.scrollTo(0, 800);
+   }
+   /* 디자이너 페이지내 위치이동 */
+   function scroll_d() {
+      window.scrollTo(0, 1450);
+   }
+
+
+
+ </script>
+
+
+</html>

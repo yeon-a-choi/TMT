@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>TMT Sale</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- Fade 효과를 주기위한 외부 css -->
+  <link href="http://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" >
+ </head>
+ <body>
+ <!-- Fade 효과를 주기위한 외부 js -->
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+		AOS.init();
+	</script>
+		<header>
+			<div class="wrapper">
+				<a href="./main.html"><img src="image/cat.png" alt="TMT"></a> <!-- 로고 -->
+				<nav>
+					<ul class="menu">
+						<li><a href="./exhibition.html" id=bol>Exhibition</a></li>
+						<li><a href="./sale.html" id=bol>Sale</a></li>
+						<li><a href="./customizing.html" id=bol>Customizing</a></li>
+						<li><a href="./Recommended.html" id=bol>Recommended coordination</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		
+		<footer>
+			<div class="foot">
+				<ul class="bottom">
+					<li>Tel : 054-820-5114</li>
+					
+					<li>Address : 1375, Gyeongdong-ro, Andong-si, Gyeongsangbuk-do</li>
+
+					<li>E-mail :  banmu_@naver.com</li>
+
+					<li>COPYRIGHT@Online Beauty & Fashion Exhibition</li>
+				</ul>
+			</div>
+		</footer>
+		<div class="saleimg">
+			<img src="image/sale.png" style="width: 100%;">
+			<div class="content">
+				<div class="fade_2" data-aos="fade-down" data-aos-easing="ease-in-out">
+					<p>제품 판매</p>
+					<p>Sale</p>
+					<p><img src="image/arrow.svg"></p>
+				</div>
+			</div>
+		</div>
+
+		<div class="select">
+			<ul class="sel">
+				<li><a href="" id=col>2019 대구패션페어</a></li>
+				<li><a href="" id=col>K-BEAUTY EXPO</a></li>
+				<li><a href="" id=col>SEOUL FASHION WEEK</a></li>
+			</ul>
+			<img src="image/pink.png" alt="PINK" style="width: 74%; height: 40px;">
+		</div>
+	
+	<div class="fade" data-aos="fade-up" data-aos-easing="ease-in-out">
+		<div class="image">
+			<a href="./Product_Datail.html"><img src="image/si5.png" style="padding: 0px 40px 100px 28px;"></a>
+			<p style="left: 51.5px;">2020 F/W<br>백포인트 프린트 원피스<br>￦649,000</p>
+			<img src="image/si2.png" style="padding: 0px 40px 100px 30px;">
+			<p style="left: 307px;">2019 S/S<br>천연 무늬 가디건<br>￦185,000</p>
+			<img src="image/si3.png" style="padding: 0px 40px 100px 30px;">
+			<p style="left: 539px;">2019 S/S<br>시스루 블랙 원피스<br>￦230,000</p>
+			<img src="image/si4.png" style="padding: 0px 40px 100px 30px;">
+			<p style="left: 794px;">2019 S/S<br>브라운 슬랙스<br>￦496,000</p>
+		</div>
+	</div>
+
+	<div class="fade_1" data-aos="fade-up" data-aos-easing="ease-in-out">
+		<div class="img1">
+			<img src="image/si1.png" style="padding: 0px 40px 100px 28px;">
+			<p style="left: 60px;">2019 S/S<br>수채화 무늬 원피스<br>￦219,000</p>
+			<img src="image/si6.png" style="padding: 0px 40px 100px 30px;">
+			<p style="left: 319.5px;">2020 S/S<br>화이트 자켓<br>￦317,000</p>
+			<img src="image/si7.png" style="padding: 0px 40px 100px 30px;">
+			<p style="left: 535.3px;">2020 S/S<br>블루 스트라이프 셔츠<br>￦403,000</p>
+			<img src="image/si8.png" style="padding: 0px 40px 100px 30px;">
+			<p style="left: 783.5px;">2019 S/S<br>비대칭라인 스커트<br>￦227,000</p>
+		</div>
+	</div>
+	</body>
+</html>
+
