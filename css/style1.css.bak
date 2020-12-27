@@ -1,0 +1,222 @@
+@charset "UTF-8";
+
+/*content*/
+	content {
+		color: white;
+		font-size: 10pt;
+		margin: 0 auto;
+	}
+
+	.sel1{
+		text-align: left;
+		list-style-type: none;
+		position: relative;
+		margin-top: -60px;
+	}
+	
+	.sel1 li{
+		display: inline;
+		border-left: 2.5px solid white;
+		padding: 0px 20px 10px 20px; /*padding: 위 오른쪽 아래 왼쪽*/
+		display: inline-block; /*글자 가운데 정렬*/
+		font-size: 12pt;
+	}
+
+	.sel1 li:first-child{
+		border-left: none;
+	}
+
+	.saleimg .content1{
+		position: absolute;
+		top: 215px;
+		left: 565px;
+		color: white;
+		font-weight: bold;
+		font-size: 21pt;
+		text-align: center;
+		color: white;
+	}
+	.entire {
+		width:auto;
+		margin:100px 0 0 12.5%;
+	}
+	
+	.pdt_Detail {
+		margin: 45px 0% 0% 0%;
+		float: left;
+	}	
+	
+	.pdt_purchase {
+		margin: 40px 0% 0% 7%;
+		float: left;
+		/*/height:auto;*/
+		height:400px;
+		padding:10px;
+	}
+	
+	.pdt_purchase li{
+		list-style-type:none;
+		font-size: 20pt;
+	}
+
+	
+	
+/*select box*/
+	.custom-select {
+	  position: relative;
+	  font-family: Arial;
+	  width:40%;
+	  margin: auto;
+	  
+	  font-size:13pt;
+	  text-align: center;
+	  
+	}
+
+	.custom-select select {
+	  display: none; /*hide original SELECT element:*/
+	}
+
+	.select-selected {
+	  background-color: #fff;
+	}
+
+	/*style the arrow inside the select element:*/
+	.select-selected:after {
+	  position: absolute;
+	  content: "";
+	  top: 14px;
+	  right: 10px;
+	  width: 0;
+	  height: 0;
+	  border: 8px solid #666666;
+	  border-color: #ffcccc transparent transparent transparent;
+	}
+
+	/*point the arrow upwards when the select box is open (active):*/
+	.select-selected.select-arrow-active:after {
+	  border-color: transparent transparent #ffcccc transparent;
+	  top: 7px;
+	}
+
+	/*style the items (options), including the selected item: 위 오른쪽 아래 왼쪽*/
+	.select-items div {
+	  color: #666666;
+	  padding: 8px 16px;
+	  border: 1px solid transparent;
+	  border-color: transparent #666666 #666666 #666666;
+	  cursor: pointer;
+	  user-select: none;
+	}
+	
+	.select-selected {
+		color: #666666;
+		padding: 8px 16px;
+		border: 1px solid transparent;
+		border-color: #666666 #666666 #666666 #666666;
+		cursor: pointer;
+		user-select: none;
+	}
+
+	/*style items (options):*/
+	.select-items {
+	  position: absolute;
+	  background-color: #fff;
+	  top: 100%;
+	  left: 0;
+	  right: 0;
+	  z-index: 99;
+	}
+
+	/*hide the items when the select box is closed:*/
+	.select-hide {
+	  display: none;
+	}
+
+	.select-items div:hover, .same-as-selected {
+	  background-color: rgba(0, 0, 0, 0.1);
+	}
+
+
+
+	.purchase-button {
+		background-color:#CCCCCC;
+		color:#fff;
+		
+		border: none;
+		outline: none;
+		
+		font-size:15pt;
+		padding: 6px 24px;
+		border-radius: 8px;
+		width:300px;
+		margin: 22px;
+		cursor: pointer;
+	}
+	
+	.purchase-button:hover {
+		background-color: #c2c2c2;
+	}
+
+	.purchase-button:active {
+		background-color: #c2c2c2;
+	}
+
+/*상세페이지*/
+	
+	.Detail-content {
+		float:left;
+		width:85%;
+		margin:0 0 5% 0%;
+	}
+	
+	.details p{
+		text-align:center;
+	}
+	
+	.button_count {
+		width:300px;
+		margin:auto;
+	}
+	
+	.button_count form{
+		background-color:#efeeee;
+		height:45px;
+		margin:10px 0 0 0;
+	}
+	
+	.button_count input {
+		float:left;
+		width:25px;
+		height:25px;
+		border:none;
+		margin:10px 0px 10px 0px;
+		text-align: center;
+		background-color:transparent;
+		color:#666666;
+	}
+	
+	.button_count p{
+		font-size:14pt;
+		float:right;
+		margin:10px;
+	}
+
+
+/* 추천코디 페이지*/
+	.img_all{
+		margin: 6% 12.5%;
+	}
+
+	.star_img {
+		width:250px;
+		height:auto;
+		margin:0 0 7% 8.5%;
+		float:left;
+	}
+	
+	.star_img img{
+		width:250px;
+		height:auto;
+	}
+	
